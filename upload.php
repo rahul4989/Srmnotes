@@ -10,7 +10,8 @@
 
     <form method="POST" enctype="multipart/form-data" action="uploaded.php">
       <input type="file" name="myfile"/>
-      <input type="text" name="subject" placeholder="subject"/>
+      <input type="radio" name="subject"  value="micro" />micro
+      <input type="radio" name="subject"  value="csa" />csa
       <input type="number" name="year" placeholder="year"/>
       <button name="btn">Upload</button>
     </form>
