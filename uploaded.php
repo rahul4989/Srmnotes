@@ -12,6 +12,7 @@ if(move_uploaded_file($tmp_name,$file_destination.$name)){
   echo "files uploaded";
   $query_insert="INSERT INTO micrp.upload ( `name`, `subject`, `year`) VALUES ('$name','$subject','$year')";
   $submit_query=mysqli_query($con,$query_insert);
+header('location:upload.php');
 }
 else{
 
