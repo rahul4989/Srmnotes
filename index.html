@@ -5,12 +5,13 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>.footer {
-  
+
   bottom: 0;
   width: 100%;
   height: 60px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
+  text-align: center;
 }</style>
   </head>
   <body>
@@ -19,16 +20,17 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">Hidden brand</a>
+    <a class="navbar-brand" href="#">SRMNotes</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="login.php">Login <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="micro.php" tabindex="-1" aria-disabled="true">Microprocessors</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="csa.php" tabindex="-1" aria-disabled="true">CSA</a>
       </li>
     </ul>
 
@@ -43,24 +45,24 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="kk.png" class="d-block w-100" alt="..." height="700">
+        <img src="https://predictabledesigns.com/wp-content/uploads/2018/01/microprocessor-or-microcontroller.jpeg" class="d-block w-100" alt="..." height="700">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>Find your notes here!</h5>
+          <p></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="kk.png" class="d-block w-100" alt="...">
+        <img src="https://uproxx.files.wordpress.com/2012/06/mp.jpg?quality=100&w=650&h=363" class="d-block w-100" alt="..." height="700">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>More notes will be coming soon.</h5>
+          <p></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="kk.png" class="d-block w-100" alt="...">
+        <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507__340.jpg" class="d-block w-100" alt="..." height="700">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h5>Uploaded directly by your faculty</h5>
+          <p></p>
         </div>
       </div>
     </div>
@@ -78,33 +80,38 @@
   <div class="row">
     <div class="col-sm-6">
 <div class="card" style="width: 18rem;">
-  <img src="kk.png" class="card-img-top" alt="...">
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/04/3.jpg" class="card-img-top" alt="..." width="600" height="200">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Micro</h5>
+    <p class="card-text">Find the latest notes uploaded by your faculty here.</p>
+    <a href="micro.php" class="btn btn-primary">Microprocessors</a>
   </div>
 </div>
 </div>
 <div class="col-sm-6">
   <div class="card" style="width: 18rem;">
-    <img src="kk.png" class="card-img-top" alt="...">
+    <img src="https://images.pcworld.com/images/article/2011/06/08h-606_board-5187560.jpg" class="card-img-top" alt="..."width="600" height="200">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">CSA</h5>
+      <p class="card-text">Find the latest notes uploaded by your faculty here.</p>
+      <a href="csa.php" class="btn btn-primary">CSA</a>
     </div>
   </div>
 </div>
 </div>
 <footer class="footer">
       <div class="container">
-        <span class="text-muted">Footer</span>
+        <span class="text-muted">&copy Madeby-Rahul Kumar 2nd Year CSE Student</span>
       </div>
 </footer>
 
 
-
+<script >
+window.onload = () => {
+    let el = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+    el.parentNode.removeChild(el);
+}
+</script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

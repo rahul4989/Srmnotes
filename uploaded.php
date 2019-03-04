@@ -8,11 +8,15 @@ $subject=$_POST['subject'];
 $year=$_POST['year'];
 $tmp_name=$_FILES['myfile']['tmp_name'];
 $file_destination="uploads/";
+ini_set('upload_max_filesize', '10M');
+ini_set('post_max_size', '10M');
+ini_set('max_input_time', 300);
+ini_set('max_execution_time', 300);
 if(move_uploaded_file($tmp_name,$file_destination.$name)){
   echo "files uploaded";
-  $query_insert="INSERT INTO micrp.upload ( `name`, `subject`, `year`) VALUES ('$name','$subject','$year')";
+  $query_insert="INSERT INTO id8882972_micrp.upload ( `name`, `subject`, `year`) VALUES ('$name','$subject','$year')";
   $submit_query=mysqli_query($con,$query_insert);
-header('location:upload.php');
+
 }
 else{
 

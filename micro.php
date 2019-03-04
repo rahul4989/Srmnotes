@@ -10,9 +10,10 @@ require 'common.php'; ?>
 
       bottom: 0;
       width: 100%;
-      height: 60px; /* Set the fixed height of the footer here */
-      line-height: 60px; /* Vertically center the text there */
+      height: 60px;
+      line-height: 60px;
       background-color: #f5f5f5;
+      text-align: center;
     }</style>
   </head>
   <body>
@@ -21,16 +22,16 @@ require 'common.php'; ?>
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="#">Hidden brand</a>
+    <a class="navbar-brand" href="index.html">SRMNotes</a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="login.php"> Login<span class="sr-only">Login</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Microprocessors</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="csa.php" tabindex="-1" aria-disabled="true">CSA</a>
       </li>
     </ul>
 
@@ -42,10 +43,10 @@ require 'common.php'; ?>
     </div>
     <div class="col-sm-10">
 <div class="card mb-3">
-  <img src="kk.png" class="card-img-top" alt="..."height="500">
+  <img src="http://epilepsyu.com/wp-content/uploads/2018/09/trace-3157431__340.jpg" class="card-img-top" alt="..."height="500">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <h5 class="card-title">Microprocessors</h5>
+    <p class="card-text">Find your notes updated daily by your faculty.</p>
 
   </div>
 </div>
@@ -59,7 +60,7 @@ require 'common.php'; ?>
     <div class="col-sm-10">
     <?php
 
-    $queryi="SELECT name,subject,year FROM upload WHERE subject='micro' ORDER BY id DESC";
+    $queryi="SELECT name,subject,year FROM id8882972_micrp.upload WHERE subject='micro' ORDER BY id DESC";
     $result=mysqli_query($con,$queryi);
 
      ?>
@@ -83,7 +84,7 @@ require 'common.php'; ?>
 </div>
 <footer class="footer">
       <div class="container">
-        <span class="text-muted">Footer</span>
+        <span class="text-muted">&copy Madeby-Rahul Kumar 2nd Year CSE Student</span>
       </div>
 </footer>
 

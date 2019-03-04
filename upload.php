@@ -1,7 +1,8 @@
-<?php if(!isset($_SESSION['username'])){
+<?php
+session_start();
+if(($_SESSION['id']!=true)){
   header('location:login.php');
-}
- ?>
+}?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -14,6 +15,13 @@
 <link rel="stylesheet" href="uplo.css">
   </head>
   <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <a href="logout.php">Logout</a>
+        </div>
+      </div>
+    </div>
 
 
 
